@@ -10,7 +10,6 @@
 *{
 box-sizing:border-box;
 }
-
 html,body{
 margin:0;
 padding:0;
@@ -20,7 +19,6 @@ font-family:'Playfair Display',serif;
 color:#fff8e7;
 overflow:hidden;
 }
-
 body{
 display:flex;
 flex-direction:column;
@@ -35,7 +33,6 @@ background-size:180% 180%,180% 180%,180% 180%,180% 180%,auto;
 background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,repeat;
 animation:backgroundShift 22s ease-in-out infinite alternate;
 }
-
 @keyframes backgroundShift{
 0%{
 background-position:0% 0%,100% 0%,50% 100%,0% 50%,0 0;
@@ -44,7 +41,6 @@ background-position:0% 0%,100% 0%,50% 100%,0% 50%,0 0;
 background-position:15% 10%,85% 15%,45% 85%,100% 50%,0 0;
 }
 }
-
 body::before{
 content:"";
 position:absolute;
@@ -56,7 +52,6 @@ opacity:0.09;
 pointer-events:none;
 animation:heroGlow 10s ease-in-out infinite;
 }
-
 @keyframes heroGlow{
 0%,100%{
 opacity:0.07;
@@ -67,7 +62,6 @@ opacity:0.11;
 transform:scale(1.02);
 }
 }
-
 body::after{
 content:"";
 position:absolute;
@@ -81,7 +75,6 @@ inset 0 0 0 0.12vw rgba(255,232,175,0.28),
 pointer-events:none;
 animation:borderGlow 8s ease-in-out infinite;
 }
-
 @keyframes borderGlow{
 0%,100%{
 box-shadow:
@@ -96,7 +89,6 @@ inset 0 0 0 0.12vw rgba(255,238,199,0.42),
 0 0 2vh rgba(231,192,92,0.18);
 }
 }
-
 header{
 position:relative;
 z-index:1;
@@ -116,7 +108,6 @@ box-shadow:0 0.7vh 2vh rgba(0,0,0,0.22);
 overflow:hidden;
 min-height:24vh;
 }
-
 .header-city-photo{
 position:absolute;
 left:0;
@@ -126,12 +117,10 @@ height:100%;
 pointer-events:none;
 overflow:hidden;
 }
-
 .header-city-photo::before{
 content:"";
 position:absolute;
 inset:-1.5vh -1vw -0.3vh -1vw;
-
 background-image:
 linear-gradient(
 to bottom,
@@ -147,18 +136,14 @@ rgba(5,23,28,0.10) 82%,
 rgba(5,23,28,0.68) 100%
 ),
 url("gent_header_realistic.jpg");
-
 background-size:cover,cover,cover;
 background-position:center center,center center,center 46%;
 background-repeat:no-repeat;
-
 filter:saturate(0.95) contrast(1.06);
 opacity:0.73;
 transform:scale(1.02);
-
 animation:gentPhotoDrift 24s ease-in-out infinite alternate;
 }
-
 @keyframes gentPhotoDrift{
 0%{
 transform:scale(1.02) translateX(-0.4%);
@@ -167,7 +152,6 @@ transform:scale(1.02) translateX(-0.4%);
 transform:scale(1.055) translateX(0.4%);
 }
 }
-
 .header-city-photo::after{
 content:"";
 position:absolute;
@@ -185,7 +169,6 @@ rgba(236,195,93,0.13),
 rgba(236,195,93,0) 52%
 );
 }
-
 .header-inner{
 position:relative;
 z-index:2;
@@ -195,7 +178,6 @@ align-items:center;
 gap:0.30vh;
 padding-bottom:0.6vh;
 }
-
 .logo-medallion{
 width:18.8vh;
 height:18.8vh;
@@ -204,7 +186,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 padding:1.35vh;
-
 background:
 radial-gradient(
 circle at 28% 24%,
@@ -213,16 +194,13 @@ rgba(247,222,147,0.96) 30%,
 rgba(211,163,49,0.98) 67%,
 rgba(101,66,9,0.99) 100%
 );
-
 box-shadow:
 0 0.7vh 1.8vh rgba(0,0,0,0.28),
 inset 0 0 0 0.22vh rgba(255,238,191,0.75),
 inset 0 0 0 0.55vh rgba(161,114,33,0.45);
-
 position:relative;
 animation:logoFloat 7s ease-in-out infinite;
 }
-
 @keyframes logoFloat{
 0%,100%{
 transform:translateY(0);
@@ -231,7 +209,6 @@ transform:translateY(0);
 transform:translateY(-0.45vh);
 }
 }
-
 .logo-medallion::before{
 content:"";
 position:absolute;
@@ -240,19 +217,15 @@ border-radius:50%;
 border:0.16vh solid rgba(255,240,194,0.65);
 pointer-events:none;
 }
-
 .header-logo{
 width:72%;
 height:72%;
 object-fit:contain;
-
 filter:
 drop-shadow(0 0.2vh 0.35vh rgba(0,0,0,0.28))
 drop-shadow(0 0 0.8vh rgba(219,181,88,0.16));
-
 mix-blend-mode:multiply;
 }
-
 h1{
 margin:0;
 font-family:'Cinzel',serif;
@@ -261,12 +234,10 @@ font-weight:700;
 letter-spacing:0.08em;
 color:#f6d982;
 text-align:center;
-
 text-shadow:
 0 0.16vh 0.35vh rgba(0,0,0,0.65),
 0 0 1vh rgba(214,176,79,0.18);
 }
-
 .subtitle{
 margin:0;
 font-family:'Great Vibes',cursive;
@@ -275,12 +246,10 @@ line-height:1;
 letter-spacing:0.02em;
 color:#fae9be;
 text-align:center;
-
 text-shadow:
 0 0.08vh 0.2vh rgba(0,0,0,0.60),
 0 0 0.8vh rgba(0,0,0,0.35);
 }
-
 main{
 position:relative;
 z-index:1;
@@ -291,7 +260,6 @@ gap:1.3vw;
 padding:2vh 2vw;
 min-height:0;
 }
-
 .panel{
 background:
 linear-gradient(
@@ -299,176 +267,130 @@ linear-gradient(
 rgba(255,251,239,0.97) 0%,
 rgba(243,233,208,0.95) 100%
 );
-
 border:1px solid rgba(220,184,89,0.78);
 border-radius:1vw;
-
 box-shadow:
 0 0.9vh 2.4vh rgba(0,0,0,0.22),
 inset 0 0 0 0.08vw rgba(255,236,180,0.55);
-
 padding:1.5vh 1.2vw;
 color:#34261d;
-
 display:flex;
 flex-direction:column;
 min-height:0;
 position:relative;
 overflow:hidden;
 }
-
 .panel::before{
 content:"";
 position:absolute;
 inset:0;
-
 background:
 linear-gradient(
 135deg,
 rgba(255,255,255,0.22),
 rgba(255,255,255,0) 35%
 );
-
 pointer-events:none;
 }
-
 .panel h2{
 position:relative;
 z-index:1;
-
 margin:0 0 1.2vh;
-
 font-family:'Cinzel',serif;
 font-size:1.75vw;
 line-height:1.2;
 color:#71500c;
-
 text-align:center;
-
 text-shadow:
 0 0.05vh 0 rgba(255,255,255,0.45);
 }
-
 .side-panel{
 justify-content:space-between;
 }
-
 .promo-box{
 position:relative;
 z-index:1;
-
 display:flex;
 flex-direction:column;
 gap:1vh;
 height:100%;
 }
-
 .promo-main{
 padding:1.2vh 1vw;
 border-radius:0.8vw;
-
 background:rgba(255,253,247,0.88);
-
 border:
 1px solid rgba(214,184,110,0.45);
-
 box-shadow:
 0 0.25vh 0.7vh rgba(0,0,0,0.05),
 inset 0 0 0 0.04vw rgba(255,241,205,0.55);
-
 font-size:1.28vw;
 line-height:1.45;
-
 text-align:center;
 color:#4b3520;
 }
-
 .promo-main strong{
 font-family:'Cinzel',serif;
 font-size:1.4vw;
 color:#6b4705;
 }
-
 .promo-contact{
 padding:1.1vh 1vw;
 border-radius:0.8vw;
-
 background:
 linear-gradient(
 135deg,
 rgba(255,250,235,0.94),
 rgba(247,232,193,0.90)
 );
-
 border:
 1px solid rgba(214,184,110,0.42);
-
 text-align:center;
 font-family:'Cinzel',serif;
 font-size:1.2vw;
 line-height:1.5;
 color:#5a3d12;
-
 box-shadow:
 inset 0 0 0 0.04vw rgba(255,241,205,0.55);
 }
-
 .promo-bottom{
 margin-top:auto;
 padding:1.15vh 1vw;
-
 border-radius:0.8vw;
-
 background:
 linear-gradient(
 135deg,
 rgba(28,102,97,0.10),
 rgba(255,247,222,0.88)
 );
-
 border:
 1px solid rgba(191,154,172,0.42);
-
 font-family:'Cinzel',serif;
 font-size:1.1vw;
 line-height:1.45;
-
 text-align:center;
 color:#2f655f;
 }
-
 .board-date{
 position:relative;
 z-index:1;
-
 font-size:1.15vw;
-
 text-align:center;
-
 margin:-0.2vh 0 1.3vh;
-
 color:#7a6342;
 font-style:italic;
 }
-
 .arrivals-table{
 position:relative;
 z-index:1;
-
 width:100%;
-
 border-collapse:collapse;
-
 background:rgba(255,255,255,0.80);
-
 border-radius:0.7vw;
-
 overflow:hidden;
-
 box-shadow:
 inset 0 0 0 0.05vw rgba(220,184,89,0.25);
 }
-
 .arrivals-table thead tr{
 background:
 linear-gradient(
@@ -478,42 +400,33 @@ rgba(88,52,8,0.12),
 rgba(213,166,54,0.34)
 );
 }
-
 .arrivals-table th,
 .arrivals-table td{
 padding:1vh 0.9vw;
-
 border-bottom:
 1px solid rgba(214,184,110,0.45);
-
 text-align:left;
 }
-
 .arrivals-table th{
 font-family:'Cinzel',serif;
 font-size:1.08vw;
 letter-spacing:0.05em;
 color:#684704;
 }
-
 .arrivals-table td{
 font-size:1.42vw;
 font-weight:700;
 }
-
 .arrivals-table tbody tr:last-child td{
 border-bottom:none;
 }
-
 .room{
 width:34%;
 color:#5d4526;
 }
-
 .guest{
 font-style:italic;
 }
-
 .g1{color:#d76d8b;}
 .g2{color:#9f9e55;}
 .g3{color:#417fbe;}
@@ -521,68 +434,47 @@ font-style:italic;
 .g5{color:#688751;}
 .g6{color:#cc6b5a;}
 .g7{color:#ae9f4f;}
-
 .notice{
 position:relative;
 z-index:1;
-
 margin-top:1.2vh;
-
 padding:1.1vh 1vw;
-
 font-family:'Cinzel',serif;
 font-size:1.12vw;
 line-height:1.45;
-
 text-align:center;
-
 color:#2f655f;
-
 background:
 linear-gradient(
 135deg,
 rgba(28,102,97,0.10),
 rgba(255,247,222,0.88)
 );
-
 border:
 1px solid rgba(191,154,172,0.42);
-
 border-radius:0.7vw;
-
 box-shadow:
 inset 0 0 0 0.05vw rgba(255,255,255,0.45);
 }
-
 .right-grid{
 position:relative;
 z-index:1;
-
 display:grid;
-
 grid-template-rows:auto auto 1fr auto;
-
 gap:1.2vh;
-
 height:100%;
 }
-
 .info-card{
 background:
 rgba(255,253,247,0.88);
-
 border:
 1px solid rgba(214,184,110,0.45);
-
 border-radius:0.8vw;
-
 padding:1.2vh 1vw;
-
 box-shadow:
 0 0.25vh 0.7vh rgba(0,0,0,0.05),
 inset 0 0 0 0.04vw rgba(255,241,205,0.55);
 }
-
 .info-uniform{
 font-family:'Cinzel',serif;
 font-size:1.7vw;
@@ -590,77 +482,54 @@ line-height:1.35;
 color:#5a3d12;
 text-align:center;
 }
-
 .info-list{
 display:flex;
 flex-direction:column;
 gap:0.9vh;
 }
-
 .info-row{
 padding:1.05vh 0.95vw;
-
 background:
 rgba(255,251,244,0.84);
-
 border:
 1px solid rgba(214,184,110,0.42);
-
 border-radius:0.65vw;
-
 font-family:'Cinzel',serif;
 font-size:1.62vw;
 line-height:1.35;
-
 color:#5a3d12;
-
 text-align:center;
-
 box-shadow:
 inset 0 0 0 0.03vw rgba(255,244,215,0.45);
 }
-
 .irina-box{
 margin-top:auto;
-
 padding:1.25vh 1vw;
-
 text-align:center;
-
 font-family:'Cinzel',serif;
 font-size:2.2vw;
-
 color:#8f6b12;
-
 background:
 linear-gradient(
 135deg,
 rgba(255,247,225,0.94),
 rgba(241,220,166,0.88)
 );
-
 border:
 1px solid rgba(214,184,110,0.42);
-
 border-radius:0.8vw;
-
 box-shadow:
 inset 0 0 0 0.05vw rgba(255,241,205,0.55);
 }
-
 .footer{
 position:relative;
 z-index:1;
-
 display:flex;
 justify-content:center;
 align-items:center;
-
 padding:1.15vh 2vw 1.4vh;
-
 border-top:
 0.22vh solid rgba(225,184,82,0.82);
-
 background:
 linear-gradient(
 to right,
@@ -668,395 +537,230 @@ rgba(255,255,255,0.02),
 rgba(226,187,84,0.10),
 rgba(255,255,255,0.02)
 );
-
 font-size:1.12vw;
-
 color:#f7dfa0;
-
 letter-spacing:0.04em;
-
 text-align:center;
-
 text-shadow:
 0 0.08vh 0.25vh rgba(0,0,0,0.35);
 }
-
 .loading-row td,
 .error-row td,
 .empty-row td{
 text-align:center;
 font-style:italic;
 }
-
 @media (max-width:1400px){
-
 h1{
 font-size:2.9vw;
 }
-
 .subtitle{
 font-size:1.9vw;
 }
-
 .panel h2{
 font-size:2vw;
 }
-
 .promo-main,
 .promo-contact{
 font-size:1.35vw;
 }
-
 .promo-main strong{
 font-size:1.45vw;
 }
-
 .promo-bottom{
 font-size:1.25vw;
 }
-
 .arrivals-table th{
 font-size:1.25vw;
 }
-
 .arrivals-table td{
 font-size:1.7vw;
 }
-
 .notice{
 font-size:1.35vw;
 }
-
 .info-uniform,
 .info-row{
 font-size:1.45vw;
 }
-
 .irina-box{
 font-size:2.35vw;
 }
-
 .footer{
 font-size:1.35vw;
 }
-
 }
 </style>
 </head>
-
 <body>
-
 <header>
-
 <div class="header-city-photo" aria-hidden="true"></div>
-
 <div class="header-inner">
-
 <div class="logo-medallion">
-
 <img
 class="header-logo"
 src="logo.png"
 alt="Logo"
 />
-
 </div>
-
 <h1>Welcome to Gent</h1>
-
 <p class="subtitle">
 Where history meets hospitality
 </p>
-
 </div>
-
 </header>
-
 <main>
-
 <section class="panel side-panel">
-
 <h2>
 Exclusive Guest Benefit
 </h2>
-
 <div class="promo-box">
-
 <div class="promo-main">
-
 <strong>
 Enjoy 10% loyalty discount
 </strong>
-
 <br>
-
 for your next stay at our partner hotel
-
 <br>
-
 <strong>
 P6 Antwerp
 </strong>
-
 </div>
-
 <div class="promo-contact">
-
 +32 470 89 54 82
-
 <br>
-
 info@p6-antwerp.be
-
 </div>
-
 <div class="promo-bottom">
-
 A beautiful next stop in Antwerp,
 with the same warm hospitality.
-
 </div>
-
 </div>
-
 </section>
-
-
 <section class="panel">
-
 <h2>
 Guests Arriving
 </h2>
-
 <p
 class="board-date"
 id="board-date"
 >
-
 Check-in
-
 </p>
-
 <table class="arrivals-table">
-
 <thead>
-
 <tr>
-
 <th>
 Room
 </th>
-
 <th>
 Guest
 </th>
-
 </tr>
-
 </thead>
-
 <tbody id="guest-table-body">
-
 <tr class="loading-row">
-
 <td colspan="2">
 Loading guest names...
 </td>
-
 </tr>
-
 </tbody>
-
 </table>
-
 <div class="notice">
-
 The keys are in the door of your room.
-
 </div>
-
 </section>
-
-
 <section class="panel">
-
 <h2>
 Some Information
 </h2>
-
 <div class="right-grid">
-
 <div class="info-card info-uniform">
-
 Check-in 14:00
-
 </div>
-
 <div class="info-card info-uniform">
-
 Check-out 11:00
-
 </div>
-
 <div class="info-card info-list">
-
 <div class="info-row">
-
 Breakfast time 8:30 - 11:00
-
 </div>
-
 <div class="info-row">
-
 You can reach us at +32 456 72 10 94
-
 </div>
-
 <div class="info-row">
-
 Tram to St. Pieters Station N1 &amp; N3
 (Lippensplein)
-
 </div>
-
 </div>
-
 <div class="irina-box">
-
-Irina
-
+Olha
 </div>
-
 </div>
-
 </section>
-
 </main>
-
-
 <div class="footer">
-
 Gent City B&amp;B,
 Notarisstraat 31,
 9000 Gent
-
 </div>
-
-
 <script>
-
 const SHEET_ID =
 "1MQw_D1IQfADc6XswmJeBYJEZhcEEAMGzjJIPgV3XKHc";
-
 const SHEET_GID =
 "0";
-
 const CSV_URL =
 `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
-
-
 function escapeHtml(value){
-
 return String(value ?? "")
-
 .replace(/&/g,"&amp;")
-
 .replace(/</g,"&lt;")
-
 .replace(/>/g,"&gt;")
-
 .replace(/"/g,"&quot;")
-
 .replace(/'/g,"&#39;");
-
 }
-
-
 function parseCsvLine(line){
-
 const result = [];
-
 let current = "";
-
 let inQuotes = false;
-
-
 for(let i = 0; i < line.length; i++){
-
 const char = line[i];
-
 const next = line[i + 1];
-
-
 if(char === '"'){
-
 if(inQuotes && next === '"'){
-
 current += '"';
-
 i++;
-
 }else{
-
 inQuotes = !inQuotes;
-
 }
-
 }else if(char === "," && !inQuotes){
-
 result.push(current);
-
 current = "";
-
 }else{
-
 current += char;
-
 }
-
 }
-
-
 result.push(current);
-
 return result;
-
 }
-
-
 function normalizeRoom(value){
-
 const text =
 String(value || "").trim();
-
-
 if(/^room\d+$/i.test(text)){
-
 return text.replace(
 /^room(\d+)$/i,
 "Room $1"
 );
-
 }
-
-
 if(/^room\s+\d+$/i.test(text)){
-
 return text.replace(
 /^room\s+(\d+)$/i,
 "Room $1"
 );
-
 }
-
-
 return text;
-
 }
-
-
 function parseCsv(text){
-
 const lines =
 text
 .trim()
@@ -1064,59 +768,36 @@ text
 .filter(
 line => line.trim() !== ""
 );
-
-
 if(lines.length === 0){
-
 return [];
-
 }
-
-
 const rows =
 lines.map(parseCsvLine);
-
-
 if(
 rows.length &&
 /room/i.test(rows[0][0] || "") &&
 /guest/i.test(rows[0][1] || "")
 ){
-
 rows.shift();
-
 }
-
-
 return rows
-
 .filter(
 row =>
 (row[0] || "").trim() !== "" ||
 (row[1] || "").trim() !== ""
 )
-
 .slice(0,7)
-
 .map(
 row => ({
-
 room:
 normalizeRoom(row[0]),
-
 guest:
 (row[1] || "").trim()
-
 })
 );
-
 }
-
-
 function guestColorClass(index){
-
 const classes = [
-
 "g1",
 "g2",
 "g3",
@@ -1124,70 +805,40 @@ const classes = [
 "g5",
 "g6",
 "g7"
-
 ];
-
-
 return classes[
 index % classes.length
 ];
-
 }
-
-
 function renderGuestTable(rows){
-
 const tbody =
 document.getElementById(
 "guest-table-body"
 );
-
-
 if(
 !Array.isArray(rows) ||
 rows.length === 0
 ){
-
 tbody.innerHTML =
-
 '<tr class="empty-row"><td colspan="2">No guest names found.</td></tr>';
-
 return;
-
 }
-
-
 tbody.innerHTML =
-
 rows.map(
 (r,index) => `
-
 <tr>
-
 <td class="room">
-
 ${escapeHtml(r.room)}
-
 </td>
-
 <td class="guest ${guestColorClass(index)}">
-
 ${escapeHtml(r.guest)}
-
 </td>
-
 </tr>
-
 `
 ).join("");
-
 }
-
-
 async function loadGuests(){
-
 try{
-
 const res =
 await fetch(
 CSV_URL,
@@ -1195,39 +846,23 @@ CSV_URL,
 cache:"no-store"
 }
 );
-
-
 const csvText =
 await res.text();
-
-
 const rows =
 parseCsv(csvText);
-
-
 renderGuestTable(rows);
-
 }catch(e){
-
 document
 .getElementById(
 "guest-table-body"
 )
 .innerHTML =
-
 '<tr class="error-row"><td colspan="2">Unable to load guest names.</td></tr>';
-
 }
-
 }
-
-
 function updateBoardDate(){
-
 const today =
 new Date();
-
-
 const day =
 String(
 today.getDate()
@@ -1236,8 +871,6 @@ today.getDate()
 2,
 "0"
 );
-
-
 const month =
 String(
 today.getMonth() + 1
@@ -1246,23 +879,15 @@ today.getMonth() + 1
 2,
 "0"
 );
-
-
 document
 .getElementById(
 "board-date"
 )
 .textContent =
 `Check-in ${day}.${month}`;
-
 }
-
-
 updateBoardDate();
-
 loadGuests();
-
 </script>
-
 </body>
 </html>
